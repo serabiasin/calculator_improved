@@ -54,6 +54,8 @@ private slots:
 
      void on_sikat_clicked();
 
+     void on_hapus_clicked();
+
 private:
     Ui::MainWindow *ui;
     QString *conv_display;

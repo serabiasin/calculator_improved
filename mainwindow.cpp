@@ -95,11 +95,15 @@ void MainWindow::on_pushButton_10_clicked() //tambah
 {
     flag=1;
     QString spase;
-    spase=this->get_penampungan_text();
+
+   spase=this->get_penampungan_text();
    temp=spase.toFloat();
+
    set_null_penampungan_text();
-       penampungan_to_text.clear();
-       ui->display_kal->clear();
+
+   penampungan_to_text.clear();
+
+   ui->display_kal->clear();
 
 
 }
@@ -188,3 +192,12 @@ break;}
 }
 
 
+
+void MainWindow::on_hapus_clicked()
+{
+    angka1=0;
+    set_null_penampungan_text();
+    penampungan_to_text.clear();
+    temp=0;
+   ui-> display_kal->clear();
+}
